@@ -64,7 +64,12 @@ NVIDIA_Business_Intelligence/
 │   └── 01_data_inspection.py
 │
 ├── 05_PowerBI/
-│   └── NVIDIA_PBI.pbix
+│   ├── NVIDIA_PBI.pbix
+│   └── Screenshots/
+│       ├── 01_Executive_Overview.png
+│       ├── 02_Stock_Market_Analysis.png
+│       ├── 03_Financial_Performance.png
+│       └── 04_Risk_and_News_Analysis.png
 │
 ├── 06_Documentation/
 │   ├── data_dictionary.md
