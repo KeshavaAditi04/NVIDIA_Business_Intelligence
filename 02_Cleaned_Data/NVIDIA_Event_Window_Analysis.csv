@@ -1,0 +1,11 @@
+Event_ID,Event_Title,Market_Information_Date,Event_Day_Return_Pct,Five_Session_Return_Pct
+EV001,US expands advanced semiconductor export controls,2023-10-17,-4.679469428160266,-5.2760667222735425
+EV002,NVIDIA announces Blackwell computing platform,2024-03-18,0.7035803296355336,8.157155952456074
+EV003,NVIDIA reports record Q1 FY2025 revenue,2024-05-22,-0.45709499584026814,15.845090640201963
+EV004,US imposes H20 chip export licensing requirement,2025-04-15,1.345856573130444,-7.226086229820949
+EV005,NVIDIA reports Q1 FY2026 results and H20-related charge,2025-05-28,-0.509226863468637,4.738006051660526
+EV006,DeepSeek-R1 release triggers concerns about AI infrastructure demand,2025-01-28,8.925863418903512,0.19422673830102877
+EV007,NVIDIA joins the Dow Jones Industrial Average,2024-11-01,1.9885503987422837,11.200671147963925
+EV008,NVIDIA reports record fourth-quarter and FY2025 revenue,2025-02-26,3.672116875264275,-7.367917870120655
+EV009,NVIDIA announces Blackwell Ultra AI platform,2025-03-18,-3.4301000093375666,0.9704706865603985
+EV010,US announces non-enforcement and planned recission of AI Diffusion Rule,2025-05-13,5.634140406504073,9.252036504065032

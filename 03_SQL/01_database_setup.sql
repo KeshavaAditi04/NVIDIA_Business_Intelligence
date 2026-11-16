@@ -1,0 +1,69 @@
+-- CREATE DATABASE nvidia_business_intelligence;
+USE nvidia_business_intelligence;
+-- CREATE TABLE stock_prices (
+--     trade_date DATE PRIMARY KEY,
+--     open_price DECIMAL(12,4),
+--     high_price DECIMAL(12,4),
+--     low_price DECIMAL(12,4),
+--     close_price DECIMAL(12,4),
+--     adj_close DECIMAL(12,4),
+--     volume BIGINT
+-- );
+-- CREATE TABLE financial_data (
+--     fiscal_year VARCHAR(10) PRIMARY KEY,
+--     fiscal_year_end DATE,
+--     revenue_usd_millions DECIMAL(15,2),
+--     gross_margin_pct DECIMAL(6,2),
+--     operating_income_usd_millions DECIMAL(15,2),
+--     net_income_usd_millions DECIMAL(15,2)
+-- );
+-- CREATE TABLE business_events (
+--     event_id VARCHAR(10) PRIMARY KEY,
+--     event_date DATE,
+--     publication_date DATE,
+--     event_title VARCHAR(255),
+--     event_category VARCHAR(100),
+--     event_description TEXT,
+--     evidence_status VARCHAR(100),
+--     sentiment VARCHAR(50),
+--     source VARCHAR(100),
+--     source_url TEXT
+-- );
+-- CREATE TABLE event_categories (
+--     category_id INT AUTO_INCREMENT PRIMARY KEY,
+--     category_name VARCHAR(100) UNIQUE NOT NULL
+-- );
+
+-- INSERT INTO event_categories (category_name)
+-- VALUES
+--     ('Regulatory / Geopolitical'),
+--     ('Product / Technology'),
+--     ('Financial Results'),
+--     ('Competitive / Technology'),
+--     ('Corporate / Market Milestone');
+
+-- SELECT * FROM event_categories;
+-- ALTER TABLE business_events
+-- ADD COLUMN category_id INT;
+-- ALTER TABLE business_events
+-- ADD CONSTRAINT fk_business_event_category
+-- FOREIGN KEY (category_id)
+-- REFERENCES event_categories(category_id);
+-- UPDATE business_events AS be
+-- JOIN event_categories AS ec
+--     ON be.event_category = ec.category_name
+-- SET be.category_id = ec.category_id;
+
+-- SELECT
+--     be.event_id,
+--     be.event_category,
+--     be.category_id,
+--     ec.category_name
+-- FROM business_events AS be
+-- JOIN event_categories AS ec
+--     ON be.category_id = ec.category_id
+-- ORDER BY be.event_id;
+
+-- SELECT COUNT(*) AS events_without_category_id
+-- FROM business_events
+-- WHERE category_id IS NULL;
